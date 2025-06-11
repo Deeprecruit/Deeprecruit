@@ -1,0 +1,217 @@
+openapi: 3.0.0
+info:
+  title: DeepRecruit API
+  version: 1.0.0
+  description: API documentation for DeepRecruit backend demo
+servers:
+  - url: http://localhost:3000/api
+paths:
+  /ai-resume-score:
+    get:
+      summary: Get AI-generated resume score and analysis
+      responses:
+        '200':
+          description: Resume score result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResumeScoreResult'
+  /interview-qa:
+    get:
+      summary: Get AI-powered interview Q&A
+      responses:
+        '200':
+          description: Interview Q&A result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InterviewQAResult'
+  /job-matching:
+    get:
+      summary: Get AI job matching results
+      responses:
+        '200':
+          description: Job matching result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JobMatchingResult'
+  /analytics:
+    get:
+      summary: Get recruitment analytics data
+      responses:
+        '200':
+          description: Analytics data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnalyticsResult'
+  /automation:
+    get:
+      summary: Get automation workflow status
+      responses:
+        '200':
+          description: Automation status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AutomationResult'
+  /parse-resume:
+    get:
+      summary: Parse a raw resume text
+      responses:
+        '200':
+          description: Parsed resume fields
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ParsedResumeResult'
+  /extract-skills:
+    get:
+      summary: Extract skills from a resume
+      responses:
+        '200':
+          description: List of skills
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
+  /predict-salary:
+    get:
+      summary: Predict expected salary for a candidate
+      responses:
+        '200':
+          description: Predicted salary
+          content:
+            application/json:
+              schema:
+                type: number
+  /rank-candidates:
+    get:
+      summary: Rank candidates for a job
+      responses:
+        '200':
+          description: Ranked candidates
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Candidate'
+  /analyze-interview-feedback:
+    get:
+      summary: Analyze interview feedback text
+      responses:
+        '200':
+          description: Feedback analysis
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InterviewFeedbackAnalysis'
+components:
+  schemas:
+    ResumeScoreResult:
+      type: object
+      properties:
+        score:
+          type: integer
+        highlights:
+          type: array
+          items:
+            type: string
+        weaknesses:
+          type: array
+          items:
+            type: string
+    InterviewQAResult:
+      type: object
+      properties:
+        answer:
+          type: string
+        followUp:
+          type: string
+    JobMatchingResult:
+      type: object
+      properties:
+        bestMatch:
+          $ref: '#/components/schemas/Job'
+        reasons:
+          type: array
+          items:
+            type: string
+    AnalyticsResult:
+      type: object
+      properties:
+        totalCandidates:
+          type: integer
+        interviewsCompleted:
+          type: integer
+        averageScore:
+          type: integer
+        topSkills:
+          type: array
+          items:
+            type: string
+    AutomationResult:
+      type: object
+      properties:
+        status:
+          type: string
+        lastRun:
+          type: string
+        triggeredBy:
+          type: string
+    ParsedResumeResult:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        skills:
+          type: array
+          items:
+            type: string
+        experience:
+          type: integer
+    Candidate:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        skills:
+          type: array
+          items:
+            type: string
+        experience:
+          type: integer
+        resume:
+          type: string
+        rank:
+          type: integer
+    Job:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        requirements:
+          type: array
+          items:
+            type: string
+        location:
+          type: string
+    InterviewFeedbackAnalysis:
+      type: object
+      properties:
+        sentiment:
+          type: string
+        score:
+          type: integer
+        summary:
+          type: string 

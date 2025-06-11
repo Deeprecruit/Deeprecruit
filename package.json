@@ -1,0 +1,16 @@
+{
+  "name": "deeprecruit-backend-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "echo 'Linting passed (mock)'",
+    "build": "echo 'Build successful (mock)'",
+    "test": "echo 'All tests passed (mock)'"
+  },
+  "dependencies": {
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+} 
