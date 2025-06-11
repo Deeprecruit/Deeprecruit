@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://placehold.co/120x120?text=Logo" alt="DeepRecruit Logo" width="120"/>
+  <img src="/img/deeprecruit.jpg" alt="DeepRecruit Logo" width="120"/>
 </p>
 
 <p align="center">
