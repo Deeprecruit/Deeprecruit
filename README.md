@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status"></a>
-  <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue" alt="License"></a>
+  <a href="#"><img src="https://img.shields.io/badge/license-GPL-blue" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/coverage-100%25-success" alt="Coverage"></a>
   <a href="#"><img src="https://img.shields.io/badge/api-mock-lightgrey" alt="Mock API"></a>
 </p>
