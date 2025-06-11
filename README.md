@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/img/deeprecruit.jpg" alt="DeepRecruit Logo" width="120"/>
+  <img src="/img/deeprecruit.jpg" alt="DeepRecruit Logo" width="300"/>
 </p>
 
 <p align="center">
