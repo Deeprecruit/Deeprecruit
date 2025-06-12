@@ -3,10 +3,9 @@
 </p>
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status"></a>
-  <a href="#"><img src="https://img.shields.io/badge/license-GPL-blue" alt="License"></a>
-  <a href="#"><img src="https://img.shields.io/badge/coverage-100%25-success" alt="Coverage"></a>
-  <a href="#"><img src="https://img.shields.io/badge/api-mock-lightgrey" alt="Mock API"></a>
+  <a href="https://github.com/Deeprecruit/Deeprecruit"><img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status"></a>
+  <a href="https://github.com/Deeprecruit/Deeprecruit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-GPL-blue" alt="License"></a>
+  <a href="https://github.com/Deeprecruit/Deeprecruit/tree/main/api"><img src="https://img.shields.io/badge/api-mock-lightgrey" alt="Mock API"></a>
 </p>
 
 # DeepRecruit Backend Showcase
@@ -114,4 +113,4 @@ console.log(result);
 ---
 
 ## 📄 License
-MIT
+GPL
